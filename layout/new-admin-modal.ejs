@@ -1,0 +1,85 @@
+<div class="modal fade" id="new-admin-modal" tabindex="-1" aria-labelledby="new-admin-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h1 class="modal-title fs-4" id="new-admin-modal-label">New Admin</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="post">
+                    <ul class="list-unstyled">
+                        <li class="border-bottom pb-6">
+                            <h2 class="h5 fw-bold mb-4">Account</h2>
+                            <div class="mb-4">
+                                <label for="InputName" class="form-label fs-7">Name</label>
+                                <input type="text" class="form-control border border-dark border-radius-xs" id="InputName" aria-describedby="emailHelp">
+                            </div>
+                            <div>
+                                <label for="exampleInputEmail1" class="form-label fs-7">Email address</label>
+                                <input type="email" class="form-control border border-dark border-radius-xs" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </li>
+                        <li class="border-bottom py-6">
+                            <h2 class="h5 fw-bold mb-4">Verification</h2>
+                            <p class="mb-4">
+                                <span class="material-icons text-danger" style="vertical-align: bottom;">
+                                    warning
+                                </span>Unverified
+                            </p>
+                            <button class="form-control btn text-success w-100 border border-gray border-radius-xs" type="button">Send Verification Mail</button>
+                        </li>
+                        <li class="border-bottom py-6">
+                            <h2 class="h5 fw-bold mb-4">Access Level</h2>
+                            <select class="form-select border-radius-xs border border-dark" aria-label="Default select example">
+                                <option selected>-Choose access level-</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </li>
+                        <li class="border-bottom-0 py-6">
+                            <h2 class="h5 fw-bold mb-4">Custom Access</h2>
+                            <div class="mb-4">
+                                <input class="form-check-input border-dark border border-2 me-2" type="checkbox" value="" id="Lecture">
+                                <label class="form-check-label" for="Lecture">
+                                    Lecture
+                                </label>
+                            </div>
+                            <div class="mb-4">
+                                <input class="form-check-input border-dark border border-2 me-2" type="checkbox" value="" id="Coupon">
+                                <label class="form-check-label" for="Coupon">
+                                    Coupon
+                                </label>
+                            </div>
+                            <div class="mb-4">
+                                <input class="form-check-input border-dark border border-2 me-2" type="checkbox" value="" id="Message">
+                                <label class="form-check-label" for="Message">
+                                    Message
+                                </label>
+                            </div>
+                            <div class="mb-4">
+                                <input class="form-check-input border-dark border border-2 me-2" type="checkbox" value="" id="Setting">
+                                <label class="form-check-label" for="Setting">
+                                    Setting
+                                </label>
+                            </div>
+                            <div class="mb-4">
+                                <input class="form-check-input border-dark border border-2 me-2" type="checkbox" value="" id="Task Menu">
+                                <label class="form-check-label" for="Task Menu">
+                                    Task Menu
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+
+            </form>
+            <div class="modal-footer border-top-0">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

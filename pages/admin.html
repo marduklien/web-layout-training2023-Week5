@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <%- include('./layout/aside'); -%>
+
+  <main class="main">
+      <header class="header">
+          <nav class="navbar navbar-expand-lg bg-white">
+              <div class="d-flex align-items-center w-100">
+                  <h1 class="fs-4 mb-0 me-4 fw-bold">Admin</h1>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 justify-content-between align-items-center">
+                        <li class="nav-item dropdown mb-0">
+                              <a class="nav-link d-flex align-items-center px-4 py-0 fw-bold text-dark" href="#" role="button"
+                                  data-bs-toggle="modal" data-bs-target="#new-admin-modal">
+                                  <span class="material-icons me-0 ms-2 text-success fs-4">
+                                      add
+                                  </span>
+                                  Add New Admin
+                              </a>
+                          </li>
+                          <li class="nav-item mb-0">
+                              <a class="nav-link d-inline-block" href="#">
+                                  <span class="material-symbols-outlined me-0">
+                                      search
+                                  </span>
+                              </a>
+                              <a class="nav-link d-inline-block" href="#">
+                                  <span class="material-icons me-0">
+                                      notifications_active
+                                  </span>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </header>
+      <section class="content container-fluid">
+        
+        <div class="table-responsive-sm">
+          <table class="table table-sm table-hover mb-10">
+              <thead>
+                  <tr class="border-dark"> 
+                      <th scope="col">ID<span class="material-icons text-success fs-7 ms-2 fw-bold"> 
+                              arrow_downward
+                          </span></th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Verified</th>
+                      <th scope="col"></th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <th scope="row">#1</th>
+                      <td>
+                          <a class="d-inline-block me-4 text-black text-decoration-none" href="#" role="button"
+                              data-bs-toggle="modal" data-bs-target="#view-modal">
+                              Emir Wicks
+                          </a>
+                      </td>
+                      <td>emir.wicks@mail.com</td>
+                      <td>Yes</td>
+                      <td class="d-flex justify-content-end">
+                          <a class="d-inline-block text-black me-4 d-flex align-items-center" href="#" role="button"
+                              data-bs-toggle="modal" data-bs-target="#view-modal">
+                              <span class="material-icons">
+                                  visibility
+                              </span>
+                          </a>
+                          <a class="d-inline-block text-black d-flex align-items-center" href="#" role="button" data-bs-toggle="modal"
+                              data-bs-target="#edit-admin-modal">
+                              <span class="material-icons">
+                                  edit
+                              </span>
+                          </a>
+                      </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#2</th>
+                    <td>
+                        <a class="d-inline-block me-4 text-black text-decoration-none" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            Zaina Goldsmith
+                        </a>
+                    </td>
+                    <td>zaina.goldsmith@mail.com</td>
+                    <td>Yes</td>
+                    <td class="d-flex justify-content-end">
+                        <a class="d-inline-block text-black me-4 d-flex align-items-center" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </a>
+                        <a class="d-inline-block text-black d-flex align-items-center" href="#" role="button" data-bs-toggle="modal"
+                            data-bs-target="#edit-admin-modal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#3</th>
+                    <td>
+                        <a class="d-inline-block me-4 text-black text-decoration-none" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            Mahima Lopez
+                        </a>
+                    </td>
+                    <td>mahima.lopez@mail.com</td>
+                    <td>Yes</td>
+                    <td class="d-flex justify-content-end">
+                        <a class="d-inline-block text-black me-4 d-flex align-items-center" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </a>
+                        <a class="d-inline-block text-black d-flex align-items-center" href="#" role="button" data-bs-toggle="modal"
+                            data-bs-target="#edit-admin-modal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#4</th>
+                    <td>
+                        <a class="d-inline-block me-4 text-black text-decoration-none" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            Pharrell Murray
+                        </a>
+                    </td>
+                    <td>pharrell.murray@mail.com</td>
+                    <td>Yes</td>
+                    <td class="d-flex justify-content-end">
+                        <a class="d-inline-block text-black me-4 d-flex align-items-center" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </a>
+                        <a class="d-inline-block text-black d-flex align-items-center" href="#" role="button" data-bs-toggle="modal"
+                            data-bs-target="#edit-admin-modal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#5</th>
+                    <td>
+                        <a class="d-inline-block me-4 text-black text-decoration-none" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            Annika Mcbride
+                        </a>
+                    </td>
+                    <td>annika.mcbride@mail.com</td>
+                    <td>Yes</td>
+                    <td class="d-flex justify-content-end">
+                        <a class="d-inline-block text-black me-4 d-flex align-items-center" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </a>
+                        <a class="d-inline-block text-black d-flex align-items-center" href="#" role="button" data-bs-toggle="modal"
+                            data-bs-target="#edit-admin-modal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#6</th>
+                    <td>
+                        <a class="d-inline-block me-4 text-black text-decoration-none" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            Fatimah Clark
+                        </a>
+                    </td>
+                    <td>fatimah.clark@mail.com</td>
+                    <td>Yes</td>
+                    <td class="d-flex justify-content-end">
+                        <a class="d-inline-block text-black me-4 d-flex align-items-center" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </a>
+                        <a class="d-inline-block text-black d-flex align-items-center" href="#" role="button" data-bs-toggle="modal"
+                            data-bs-target="#edit-admin-modal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#7</th>
+                    <td>
+                        <a class="d-inline-block me-4 text-black text-decoration-none" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            Klaudia Rhodes
+                        </a>
+                    </td>
+                    <td>klaudia.rhodes@mail.com</td>
+                    <td>Yes</td>
+                    <td class="d-flex justify-content-end">
+                        <a class="d-inline-block text-black me-4 d-flex align-items-center" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </a>
+                        <a class="d-inline-block text-black d-flex align-items-center" href="#" role="button" data-bs-toggle="modal"
+                            data-bs-target="#edit-admin-modal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#8</th>
+                    <td>
+                        <a class="d-inline-block me-4 text-black text-decoration-none" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            Tillie Lucero
+                        </a>
+                    </td>
+                    <td>tillie.lucero@mail.com</td>
+                    <td>Yes</td>
+                    <td class="d-flex justify-content-end">
+                        <a class="d-inline-block text-black me-4 d-flex align-items-center" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </a>
+                        <a class="d-inline-block text-black d-flex align-items-center" href="#" role="button" data-bs-toggle="modal"
+                            data-bs-target="#edit-admin-modal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#9</th>
+                    <td>
+                        <a class="d-inline-block me-4 text-black text-decoration-none" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            Sabrina Stephenson
+                        </a>
+                    </td>
+                    <td>sabrina.stephenson@mail.com</td>
+                    <td>Yes</td>
+                    <td class="d-flex justify-content-end">
+                        <a class="d-inline-block text-black me-4 d-flex align-items-center" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </a>
+                        <a class="d-inline-block text-black d-flex align-items-center" href="#" role="button" data-bs-toggle="modal"
+                            data-bs-target="#edit-admin-modal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#10</th>
+                    <td>
+                        <a class="d-inline-block me-4 text-black text-decoration-none" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            Annie Smith
+                        </a>
+                    </td>
+                    <td>annie.smith@mail.com</td>
+                    <td>Yes</td>
+                    <td class="d-flex justify-content-end">
+                        <a class="d-inline-block text-black me-4 d-flex align-items-center" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#view-modal">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </a>
+                        <a class="d-inline-block text-black d-flex align-items-center" href="#" role="button" data-bs-toggle="modal"
+                            data-bs-target="#edit-admin-modal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </a>
+                    </td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+
+          <nav aria-label="Page navigation" class="pt-0">
+            <ul class="pagination justify-content-end">
+                <li class="page-item"><a class="btn btn-outline-success border-radius-xs p-1" href="#"><span class="material-icons align-bottom">
+                            chevron_left
+                        </span></a></li>
+                <li class="page-item"><a class="btn btn-success rounded-0 py-1 active" href="#">1</a></li>
+                <li class="page-item"><a class="btn btn-outline-success rounded-0 py-1" href="#">2</a></li>
+                <li class="page-item"><a class="btn btn-outline-success rounded-0 py-1" href="#">3</a></li>
+                <li class="page-item"><a class="btn btn-outline-success border-radius-xs p-1" href="#">
+                <span class="material-icons align-bottom">navigate_next</span></a>
+                </li>
+            </ul>
+        </nav>
+
+      </section>
+  </main>
+
+    <%- include('./layout/new-admin-modal'); -%>
+    <%- include('./layout/edit-admin-modal'); -%>
+    <%- include('./layout/view-modal'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

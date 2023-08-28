@@ -1,0 +1,29 @@
+//icon
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+// font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+//bootstrap 變數
+@import "../../node_modules/bootstrap/scss/functions";
+//修改
+@import './utils/variables';
+//bootstrap
+@import "../../node_modules/bootstrap";
+
+//base
+@import './base';
+
+//utils
+@import './helps/utils';
+
+//layout
+@import './layout/aside';
+@import './layout/header';
+
+//pages
+@import './pages/index';
+@import './pages/admin';
+
+

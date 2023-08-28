@@ -1,0 +1,53 @@
+
+.fs-7 {
+    font-size:14px;
+}
+
+.fs-8 {
+    font-size:12px;
+}
+
+.text-gray-600 {
+    color: $gray-600;
+}
+
+.text-gray-900 {
+    color: $gray-900;
+}
+
+.border-radius-xs {
+    border-radius:2px
+}
+
+.modal-img {
+    width: 141px;
+    height: 141px;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $dark;
+}
+
+
+.page-item > a {
+    color: $dark !important;
+
+    &:hover {
+        color: $white !important;
+        background-color: $success !important;
+
+      }
+}
+
+.page-item > a.active  {
+    color: $white !important;
+    background-color: $success !important;
+}
+
+.form-control, .form-select {
+    height: 48px;
+}

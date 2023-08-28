@@ -1,0 +1,29 @@
+.aside{
+  position: fixed;
+  min-width: 296px;
+  min-height: 100vh;
+
+  .nav-link {
+    color: $dark;
+    border-left: 4px solid transparent;
+    font-weight: 700;
+  
+    &:hover {
+      color: $success;
+      border-color: $success;
+    }
+  
+    &.active {
+      color: $success;
+      border-color: $success;
+    }
+  }
+
+}
+
+
+.portrait {
+  min-width: 40px;
+  height: 40px;
+  object-fit: cover;
+}

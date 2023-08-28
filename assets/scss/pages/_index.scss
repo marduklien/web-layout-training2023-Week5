@@ -1,0 +1,26 @@
+main {
+  margin-left: 296px;
+}
+
+.content{
+  padding: 12px 32px 32px 32px;
+}
+
+.list-group-item.active{
+  color: black;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+.expand_more {
+  display: none;
+}
+.expand_less {
+  display: inline-block;
+}
+.collapsed .expand_more {
+  display: inline-block;
+}
+
+.collapsed .expand_less {
+  display: none;
+}
